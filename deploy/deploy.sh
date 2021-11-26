@@ -13,7 +13,7 @@ cp package.json ./dist/package.json
 echo "Создание версии функции $FUNCTION_NAME"
 yc serverless function version create \
   --function-name=$FUNCTION_NAME \
-  --runtime nodejs16-preview \
+  --runtime nodejs16 \
   --entrypoint index.handler \
   --memory 256m \
   --execution-timeout 8s \
